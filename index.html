@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TODO LIST</title>
+    <title>Today Works</title>
     <!-- css연결 -->
     <link
       rel="stylesheet"
@@ -16,45 +16,55 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <section id="container"> 
-      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <section id="container">
+      <span style="--i: 1"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 3"></span>
+      <span style="--i: 4"></span>
+      <span style="--i: 5"></span>
+      <span style="--i: 6"></span>
       <div class="contents">
         <div class="fix">
-          <h1>TODO LIST</h1>
-        <div class="insert-form row">
-          <div class="col-lg-12">
-            <div class="input-group">
-              <input
-                type="text"
-                id="value"
-                class="form-control"
-                placeholder="할일을 입력해 주세요."
-                autofocus
-              />
-              <span class="input-group-btn">
-                <button id="btn" class="btn btn-primary" type="submit">
-                  저장
-                </button>
-              </span>
+          <h1>오늘의 할일</h1>
+          <div class="insert-form row">
+            <div class="col-lg-12">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="value"
+                  class="form-control"
+                  placeholder="할일을 입력해 주세요."
+                  autofocus
+                />
+                <span class="input-group-btn">
+                  <button id="btn" class="btn btn-primary" type="submit">
+                    저장
+                  </button>
+                </span>
+              </div>
+              <!-- /input-group -->
             </div>
-            <!-- /input-group -->
+            <!-- /.col-lg-12 -->
           </div>
-          <!-- /.col-lg-12 -->
-        </div>
         </div>
         <!-- /.row -->
         <div class="table_wrap">
+          <ul>
+            <li>내용</li>
+            <li>등록한 시간</li>
+            <li>수정 / 삭제</li>
+          </ul>
           <table class="table table-striped">
             <colgroup>
               <col />
               <col style="width: 150px" />
               <col style="width: 130px" />
             </colgroup>
-            <thead>
+            <!-- <thead>
               <th>내용</th>
               <th>등록한 시간</th>
               <th>수정/삭제</th>
-            </thead>
+            </thead> -->
             <tbody id="list">
               <!-- insert todo list -->
             </tbody>

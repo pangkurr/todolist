@@ -15,7 +15,7 @@ export default class{ //모듈과 클래스 선언
 				let self = this;
 				let template = `<tr>
 									<td><span>${row.content}</span></td>
-									<td class="text-center"><span>${row.date}</span></td>
+									<td class="text-right"><span>${row.date}</span></td>
 									<td class="text-right">
 										<input class="btn btn-default btn-modify" type="button" value="수정" />
 										<input class="btn btn-default btn-delete" type="button" value="삭제" />
